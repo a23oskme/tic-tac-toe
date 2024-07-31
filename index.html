@@ -1,30 +1,50 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="style2.css">
-    </head>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <p id="textOne">text</p>
-        <br>
-        <button onclick="NameChange()">
-            <p id="buttonOne">Magiska knappen</p>
-        </button>
-    <script>
-    function NameChange()
-{
-    let text = document.getElementById("textOne").innerHTML;
-    if (text === "text")
-    {
-        text.innerHTML="Hello you";
-    }
+    <main>
+        <div class="container">
+            <table>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>A</th>
+                        <th>B</th>
+                        <th>C</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td id="A1" class="table_btn A 1"></td>
+                        <td id="B1" class="table_btn B 1"></td>
+                        <td id="C1" class="table_btn C 1"></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td id="A2" class="table_btn A 2"></td>
+                        <td id="B2" class="table_btn B 2"></td>
+                        <td id="C2" class="table_btn C 2"></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td id="A3" class="table_btn A 3"></td>
+                        <td id="B3" class="table_btn B 3"></td>
+                        <td id="C3" class="table_btn C 3"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="players">
+                <p id="player_one_name"></p>
+                <p id="player_two_name"></p>
+            </div>
+        </div>
+        <div id="reset_button">Reset</div>
+    </main>
 
-    else
-    {
-        text.innerHTML="text";
-    }
-}
-    </script>
     </body>
+    <script src="script.js"></script>
 
 </html>
